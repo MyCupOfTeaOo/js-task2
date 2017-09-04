@@ -1,0 +1,272 @@
+/*init*/
+html {
+  font-size: 125%;
+  font-family: Arial, "Times New Roman", "Microsoft YaHei", SimSun, SimHei;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F0F0F0;
+  overflow-x: hidden;
+}
+
+/*sidebar*/
+.sidebar {
+  background-color: #FFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  width: 130px;
+  height: 100%;
+  display: none;
+}
+.sidebar div {
+  border-bottom: 3px solid #F3F3F3;
+  padding: 10px;
+  color: #29BDE0;
+  font-size: 0.8rem;
+}
+.sidebar div span {
+  font-size: 1.2rem;
+}
+.sidebar div .icon-gonggao {
+  font-size: 1.4rem;
+}
+.sidebar div .icon-bangzhu {
+  font-size: 1.4rem;
+  margin-left: -2px;
+}
+.sidebar div .icon-qianjin {
+  font-size: 1.4rem;
+  float: right;
+}
+
+/*header*/
+#cb {
+  display: none;
+  z-index: 100;
+}
+#cb:checked + .sidebar + .master .menu {
+  -webkit-transition: margin-left 1s;
+  -o-transition: margin-left 1s;
+  transition: margin-left 1s;
+  margin-left: 265px;
+}
+#cb:checked + .sidebar + .master main {
+  -webkit-transition: margin-left 1s;
+  -o-transition: margin-left 1s;
+  transition: margin-left 1s;
+  margin-left: 250px;
+}
+#cb:checked + .sidebar + .master .scroll-img {
+  -webkit-transition: margin-right 1s;
+  -o-transition: margin-right 1s;
+  transition: margin-right 1s;
+  margin-right: -250px;
+}
+#cb:checked + .sidebar {
+  -webkit-transition: width 2s;
+  -o-transition: width 2s;
+  transition: width 2s;
+  z-index: 100;
+  display: block;
+  width: 250px;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: #29BDE0;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+header .menu {
+  display: inline-block;
+  margin-top: 25px;
+  margin-left: 15px;
+  width: 30px;
+  height: 25px;
+  border-radius: 0;
+  border: none;
+  background-color: #29BDE0;
+  background-image: url("../img/CssGaga.png");
+  background-size: 27px;
+  background-repeat: no-repeat;
+  background-position: 0 -77px;
+  outline: none !important;
+  cursor: pointer;
+}
+
+/*main*/
+main {
+  width: 100%;
+  padding-top: 60px;
+  z-index: 1;
+  background-color: #F0F0F0;
+}
+main .scroll {
+  margin: 20px;
+  background-color: #ffffff;
+  padding: 25px;
+  color: #9E9E9E;
+  font-weight: 500;
+}
+main .scroll text {
+  margin: 0;
+}
+main .scroll-img {
+  height: 26px;
+  width: 15.6px;
+  background-image: url("../img/CssGaga.png");
+  background-repeat: no-repeat;
+  background-size: 22.1px;
+  background-position: 0 -37.05px;
+  position: absolute;
+  right: 30px;
+  top: 102px;
+  z-index: 9;
+  cursor: pointer;
+}
+main .scroll-img:active {
+  -webkit-filter: brightness(0.5);
+  filter: brightness(0.5);
+}
+main .version {
+  margin: 20px;
+  background-color: #ffffff;
+}
+main .version .bb-f {
+  position: relative;
+  height: 345px;
+  overflow: hidden;
+}
+main .version #move {
+  position: relative;
+}
+main .version .bb {
+  width: 100%;
+  position: absolute;
+}
+main .version .wolf {
+  width: 100%;
+  position: absolute;
+  left: 100%;
+  text-align: center;
+  color: #29bde0;
+}
+main .version .wolf img {
+  margin: 50px 0;
+  width: 40%;
+  max-width: 150px;
+}
+main .version .bb1 {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #69D1E9;
+  border-radius: 0;
+  outline: none;
+}
+main .version .a1 {
+  display: block;
+  width: 80%;
+  margin: 20px 10%;
+}
+main .version .btn {
+  border: none;
+  color: #FFF;
+  cursor: pointer;
+}
+main .version .text2 {
+  margin: 0;
+  color: #9E9E9E;
+}
+main .version .next {
+  height: 26px;
+  width: 13px;
+  background-image: url("../img/CssGaga.png");
+  background-size: 17px;
+  position: absolute;
+  top: 157.5px;
+  right: 5px;
+  margin-bottom: -38.5px;
+  border: none;
+  background-color: #ffffff;
+  padding: 0;
+  outline: none;
+}
+main .version .left {
+  height: 26px;
+  width: 13px;
+  background-image: url("../img/left.png");
+  background-size: 17px;
+  background-position-x: -2px;
+  position: absolute;
+  top: 157.5px;
+  left: 5px;
+  outline: none;
+  display: none;
+}
+main .title {
+  padding: 15px;
+  border-bottom-color: #FDD99A;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+main .title .text {
+  margin: 0;
+  color: #FBB639;
+}
+main .radio {
+  display: inline-block;
+}
+main .sub {
+  text-align: center;
+}
+main .subnav {
+  width: 10px;
+  height: 10px;
+  background-color: #F0F0F0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+main input[name="r1"] {
+  display: none;
+}
+main input[name="r1"]:checked + .subnav {
+  background-color: #69D1E9;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+h5 {
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+h4 {
+  margin: 0;
+  font-weight: 500;
+}
+
+/*clear*/
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.clear {
+  content: "";
+  display: block;
+  clear: both;
+}

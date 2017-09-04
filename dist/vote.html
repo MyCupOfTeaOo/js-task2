@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>投票</title>
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/vote.min.css">
+</head>
+<body>
+<header>
+    <button type="button" class="btn l-label"></button>
+    <h4 class="title">投票</h4>
+    <a href="home.html"><button type="button" class="btn r-label"></button></a>
+</header>
+<main>
+    <div class="notice">
+        <h5>发言讨论结束，大家请投票</h5>
+        <label for="a">
+            <input type="checkbox" id="a">
+            <div onclick="a()" class="bb1 btn"></div>
+        </label>
+        <audio src="audio/财富自由.mp3" id="music"></audio>
+    </div>
+    <div class="m1">
+        <div style="height: 35px">
+                <div style="height: 15px"><div class="triangle-down"></div></div>
+                <div style="height: 15px;font-size: 0.7rem;color: #FFF">&ensp;点击得票数最多人的头像</div>
+        </div>
+    </div>
+    <div class="row margin-top">
+        <div class="col-xs-4">
+            <div class="avatar">
+                <div class="identity">水民</div>
+                <div class="id">1号</div>
+            </div>
+            <div class="hold">
+                <div class="hold1"></div>
+                <div class="hold2"></div>
+                <div class="hold3"></div>
+                <div class="hold4"></div>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="avatar">
+                <div class="identity">水民</div>
+                <div class="id">2号</div>
+            </div>
+            <div class="hold">
+                <div class="hold1"></div>
+                <div class="hold2"></div>
+                <div class="hold3"></div>
+                <div class="hold4"></div>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="avatar">
+                <div class="identity">警察</div>
+                <div class="id">3号</div>
+            </div>
+            <div class="hold">
+                <div class="hold1"></div>
+                <div class="hold2"></div>
+                <div class="hold3"></div>
+                <div class="hold4"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4">
+            <div class="avatar">
+                <div class="identity">法官</div>
+                <div class="id">4号</div>
+            </div>
+            <div class="hold">
+                <div class="hold1"></div>
+                <div class="hold2"></div>
+                <div class="hold3"></div>
+                <div class="hold4"></div>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="avatar">
+                <div class="identity">狙击手</div>
+                <div class="id">5号</div>
+            </div>
+            <div class="hold">
+                <div class="hold1"></div>
+                <div class="hold2"></div>
+                <div class="hold3"></div>
+                <div class="hold4"></div>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="avatar">
+                <div class="identity">医生</div>
+                <div class="id">6号</div>
+            </div>
+            <div class="hold">
+                <div class="hold1"></div>
+                <div class="hold2"></div>
+                <div class="hold3"></div>
+                <div class="hold4"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4">
+            <div class="avatar">
+                <div class="identity">杀手</div>
+                <div class="id">7号</div>
+            </div>
+            <div class="hold">
+                <div class="hold1"></div>
+                <div class="hold2"></div>
+                <div class="hold3"></div>
+                <div class="hold4"></div>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="avatar">
+                <div class="identity">水民</div>
+                <div class="id">8号</div>
+            </div>
+            <div class="hold">
+                <div class="hold1"></div>
+                <div class="hold2"></div>
+                <div class="hold3"></div>
+                <div class="hold4"></div>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="avatar">
+                <div class="identity">水民</div>
+                <div class="id">9号</div>
+            </div>
+            <div class="hold">
+                <div class="hold1"></div>
+                <div class="hold2"></div>
+                <div class="hold3"></div>
+                <div class="hold4"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4">
+            <div class="avatar">
+                <div class="identity">水民</div>
+                <div class="id">10号</div>
+            </div>
+            <div class="hold">
+                <div class="hold1"></div>
+                <div class="hold2"></div>
+                <div class="hold3"></div>
+                <div class="hold4"></div>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="avatar">
+                <div class="identity">水民</div>
+                <div class="id">11号</div>
+            </div>
+            <div class="hold">
+                <div class="hold1"></div>
+                <div class="hold2"></div>
+                <div class="hold3"></div>
+                <div class="hold4"></div>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="avatar">
+                <div class="identity">水民</div>
+                <div class="id">12号</div>
+            </div>
+            <div class="hold">
+                <div class="hold1"></div>
+                <div class="hold2"></div>
+                <div class="hold3"></div>
+                <div class="hold4"></div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div>
+        <div class="col-xs-4"><div class="line left-line-1"></div><div class="line left-line-2"></div></div>
+        <div class="col-xs-4 line"></div>
+        <div class="col-xs-4"><div class="line right-line1"></div><div class="line right-line2"></div></div>
+    </div>
+    <button class="btn vote" onclick="location='result.html'">投死</button>
+</footer>
+<script>
+    function a(){
+        var audio=document.getElementById('music');
+        if(audio.paused){
+            audio.play();//播放
+        }
+        else{
+            audio.pause();//暂停
+        }
+    }
+</script>
+</body>
+</html>
