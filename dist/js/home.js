@@ -10,6 +10,7 @@ function move() {
     var $ = document.getElementsByClassName("subnav");
     aa = Array.prototype.slice.call($);
     var sub = document.getElementsByClassName("sub")[0];
+    //四个小点点事件托管
     sub.onclick = function (ev) {
         var ev = ev || window.event;
         var target = ev.target || ev.srcElement;
@@ -34,7 +35,7 @@ function move() {
             var num = -sign.count*100;
             moveElement("move",num,0,10);
         }
-    }
+    };
    /* for (var i = 0; i < $.length; i++){
         $[i].onclick = function (i) {
             sign.count = aa.indexOf(i.target);

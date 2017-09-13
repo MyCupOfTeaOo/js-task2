@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>玩家配比</title>
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link href="css/assign.min.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="header">
+        <a href="home.html"><span class="iconfont icon-houtuileft"></span></a>
+        参数设置
+        <a><span class="iconfont icon-bangzhu"></span></a>
+    </div>
+</header>
+<main class="clearfix">
+    <div class="assign clearfix">
+        <div class="assign-head"><span>玩<br>家<br>配<br>比</span></div>
+        <div class="assign-details">幽灵<span id="ghost">0</span>人&emsp;平民<span id="person">0</span>人</div>
+    </div>
+    <div class="word-group">
+        <input type="text" id="personWord" placeholder="水民词组"></input>
+        <input type="text" id="ghostWord" placeholder="幽灵词组"></input>
+    </div>
+    <div class="slide">
+        玩家人数&emsp;<input type="text" id="np" value="0"></input>&nbsp;&nbsp;人<span class="prompt">只能输入4-18之间的数字</span>
+        <div class="slide-bar">
+          <span id="less">-</span>
+            <input type="range" id="slideBar" max="18" min="4" value="4" step="1">
+          <span id="plus">+</span>
+        </div>
+    </div>
+</main>
+<footer>
+
+</footer>
+<script src="js/assign.js"></script>
+</body>
+</html>
