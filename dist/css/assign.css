@@ -50,6 +50,7 @@ a {
 
 main {
   margin-top: 49.600px;
+  margin-bottom: 53px;
   padding: 8px;
 }
 
@@ -141,6 +142,11 @@ main {
   font-size: 18px;
   color: #F9B852;
   vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .slide #less {
   margin-right: 7px;
@@ -170,6 +176,21 @@ main {
   background-color: #FFFFFF;
   background-image: url("../img/thumb.png");
   background-size: cover;
+  cursor: pointer;
+}
+
+footer {
+  padding: 0px 8px;
+  position: fixed;
+  bottom: 8px;
+  width: 100%;
+  z-index: 9;
+}
+footer .footer {
+  background-color: #FAB344;
+  color: #FFF;
+  text-align: center;
+  line-height: 45px;
   cursor: pointer;
 }
 

@@ -21,6 +21,7 @@ function linearGradient() {
            t.innerText = css;
            document.body.appendChild(t)
        }
+       assigningRoles();
     };
     var less = document.getElementById("less");
     var plus = document.getElementById("plus");
@@ -38,20 +39,12 @@ function NumberPeople(i) {
     if (!document.getElementById("slideBar")) return false;
     var np = document.getElementById("np");
     var s = document.getElementById("slideBar");
-    var reg = new RegExp("^([4-9]|1[0-8])","g");
+    var reg = new RegExp("^([4-9]|1[0-8])$");
     np.onblur = function () {
-        /*if (np.value < 4 || np.value > 18){
-         alert("请输入4-18范围内的数字");
-         }*/
-        var x = !reg.test(np.value);
-        console.log(!reg.test(np.value))
-        console.log(!reg.test(np.value))
-        console.log(!reg.test(np.value))
-        console.log("x="+x)
-        if (x){
-            console.log("...x="+x)
-            console.log(!reg.test(np.value));
-            console.log(np.value);
+        if (!reg.test(np.value)){
+            np.value = 4;
+            s.value = np.value;
+            s.oninput(1);
             alert("请输入4-18范围内的数字");
         }
     };
@@ -69,6 +62,18 @@ function NumberPeople(i) {
             s.oninput(1);
         }
     }
+}
+function assigningRoles() {
+    if (!document.getElementById("np")) return false;
+    if (!document.getElementById("ghost")) return false;
+    if (!document.getElementById("person")) return false;
+    var ghost = document.getElementById("ghost");
+    var person = document.getElementById("person");
+    var np = document.getElementById("np");
+    var a = Math.ceil(np.value/3);
+    var b = np.value - a;
+    ghost.innerText = a;
+    person.innerText = b;
 }
 function addLoadEvent(func) {
     var oldonload = window.onload;
