@@ -13,12 +13,15 @@ function linearGradient() {
         var size = (value / l) * 100;
         size += "%";
         var css = "#slideBar::-webkit-slider-runnable-track{background: linear-gradient(270deg,#f9b852, #f9b852) no-repeat;background-size: "+size+" 100%;}";
-       if (document.getElementsByTagName("style")){
+       if (document.getElementsByTagName("style")[0]){
            var t = document.getElementsByTagName("style")[0];
-           t.innerText = css;
+         /*  t.innerText = css; //兼容性有问题*/
+          t.lastChild.nodeValue = css;
        }else{
            var t = document.createElement("style");
-           t.innerText = css;
+         /*  t.innerText = css;*/
+           var txt = document.createTextNode(css);
+           t.appendChild(txt);
            document.body.appendChild(t)
        }
        assigningRoles();
