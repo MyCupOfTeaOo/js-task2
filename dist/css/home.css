@@ -5,7 +5,14 @@ html {
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #F0F0F0;
+  overflow-x: hidden;
+}
+
+body {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 640px;
+  position: relative;
   overflow-x: hidden;
 }
 
@@ -14,7 +21,7 @@ html {
   background-color: #FFF;
   position: fixed;
   top: 0;
-  left: 0;
+  border-left: #F0F0F0 1px solid;
   z-index: -10;
   width: 130px;
   height: 100%;
@@ -75,6 +82,9 @@ html {
 
 header {
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 640px;
   height: 60px;
   background-color: #29BDE0;
   position: fixed;
@@ -102,6 +112,7 @@ header .menu {
 main {
   width: 100%;
   padding-top: 60px;
+  padding-bottom: .1px;
   z-index: 1;
   background-color: #F0F0F0;
 }

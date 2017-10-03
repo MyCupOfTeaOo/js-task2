@@ -16,9 +16,17 @@ html {
 
 body {
   background-color: #F0F0F0;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 640px;
+  position: relative;
+  overflow-x: hidden;
 }
 
 header {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 640px;
   background-color: #29BDE0;
   color: #FFF;
   font-size: 18px;
@@ -64,7 +72,7 @@ main {
   float: left;
   width: 20%;
   text-align: center;
-  height: 160px;
+  height: 180px;
   border-right: 1px solid #F0F0F0;
 }
 .assign-head span {
@@ -80,7 +88,60 @@ main {
   float: left;
   width: 80%;
   text-align: center;
-  line-height: 160px;
+}
+.assign-details .half {
+  color: #A2A2A2;
+  width: 50%;
+  height: 150px;
+  float: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.assign-details .half .cc1, .assign-details .half .cc2 {
+  float: left;
+  width: 5px;
+  height: 5px;
+  margin-right: 15px;
+}
+.assign-details .half .cc1 {
+  background-color: #FAB344;
+}
+.assign-details .half .cc2 {
+  background-color: #29BDE0;
+}
+.assign-details .half .td {
+  float: left;
+}
+
+.setting {
+  border-top: 1px solid #F0F0F0;
+  float: left;
+  width: 80%;
+  height: 29px;
+  text-align: center;
+  color: #3EC3E3;
+  line-height: 29px;
+  cursor: pointer;
+}
+
+.icon-xiao47 {
+  font-size: 10px;
+}
+
+#ghost, #person {
+  border: none;
+  width: 20px;
+  color: #A2A2A2;
 }
 
 .word-group {
@@ -180,6 +241,9 @@ main {
 }
 
 footer {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 640px;
   padding: 0px 8px;
   position: fixed;
   bottom: 8px;
